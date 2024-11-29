@@ -7,22 +7,23 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form name="submit-to-google-sheet">
-        <input name="email" type="email" placeholder="Email" required>
-        <button type="submit">Send</button>
-      </form>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li> 
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+
+            </ul>
+          </nav>
+    </div>
       
-      <script>
-        const scriptURL = '<SCRIPT URL>'
-        const form = document.forms['submit-to-google-sheet']
-      
-        form.addEventListener('submit', e => {
-          e.preventDefault()
-          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => console.log('Success!', response))
-            .catch(error => console.error('Error!', error.message))
-        })
-      </script>
+
+</div>
       
 </body>
 </html>
