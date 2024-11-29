@@ -1,73 +1,97 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio </title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-<div id="header">
-    <div class="container">
-        <nav>
-            <img src="images/logo.png" class="logo">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">skills</a></li> 
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+<!doctype html>
+<html lang="fr">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="Portfolio de Mohamed Feki - Étudiant en Génie Logiciel">
+        <meta name="author" content="Mohamed Feki">
 
-            </ul>
-          </nav>
-          <h1>Mohamed Feki</h1>
-        <p>Étudiant en Génie Logiciel | Développeur Web & Mobile</p>
-    </header>
+        <!-- Favicon -->
+        <link rel="icon" href="favicon.ico">
 
-    <section id="about">
-        <h2>À propos de moi</h2>
-        <p>Je suis un étudiant en 3ème année de Génie Logiciel et Systèmes d'Information à l'IIT de Sfax, passionné par le développement web et mobile.</p>
-    </section>
+        <!-- Font Awesome Icons -->
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
-    <section id="skills">
-        <h2>Compétences</h2>
-        <ul>
-            <li>HTML5, CSS3, JavaScript</li>
-            <li>React, Spring Boot, Flutter</li>
-            <li>MySQL, MongoDB</li>
-            <li>UI/UX Design</li>
-        </ul>
-    </section>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
-    <section id="projects">
-        <h2>Projets</h2>
-        <div class="project">
-            <h3>Application E-commerce</h3>
-            <p>Développement d'une plateforme de gestion des produits et commandes avec React et Spring Boot.</p>
+        <!-- Custom CSS -->
+        <link href="css/style.css" rel="stylesheet" type="text/css"/>
+        <link href="css/index.css" rel="stylesheet" type="text/css"/>
+        
+        <title>Portfolio de Mohamed Feki</title>
+    </head>
+    <body style="background: url(img/background.jpg) no-repeat center center fixed; background-size: cover;">
+        
+        <!-- Navigation -->
+        <nav class="navbar navbar-dark bg-dark fixed-top navbar-expand-md">
+            <div class="container">
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar" aria-controls="navbar">
+                    <span class="sr-only">Navigation</span>☰
+                </button>
+                <a class="navbar-brand" href="index.html">Mon Portfolio</a>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active nav-item">
+                            <a href="index.html" class="nav-link"><span class="fa fa-home"></span> Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="page/cv.html" class="nav-link"><span class="fa fa-id-badge"></span> CV</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="page/projects.html" class="nav-link"><span class="fa fa-code"></span> Projets</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="page/contact.html" class="nav-link"><span class="fa fa-envelope"></span> Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- Header -->
+        <div class="jumbotron text-center" style="background-color: #0078D7; color: white;">
+            <h1>Bienvenue sur mon Portfolio !</h1>
+            <img class="rounded-circle" src="img/profil.jpg" alt="Photo de Mohamed Feki" style="width: 150px; height: 150px;">
+            <p>Étudiant en Génie Logiciel et Systèmes d'Information à l'IIT de Sfax.</p>
+            <a class="btn btn-light" href="page/cv.html" role="button">En savoir plus sur moi »</a>
         </div>
-        <div class="project">
-            <h3>Jeu Pac-Man</h3>
-            <p>Reproduction interactive du jeu Pac-Man avec Unity.</p>
+        
+        <!-- Section Présentation -->
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <h2>Mon parcours</h2>
+                    <p>Étudiant en 3ème année, spécialisé en développement Web et Mobile. Passionné par la création de solutions logicielles innovantes et interactives.</p>
+                    <p><a class="btn btn-primary" href="page/cv.html" role="button">Voir mon CV »</a></p>
+                </div>
+                <div class="col-lg-4">
+                    <h2>Mes compétences</h2>
+                    <ul>
+                        <li>Développement Web : React, Spring Boot, HTML, CSS</li>
+                        <li>Développement Mobile : Flutter</li>
+                        <li>Bases de données : MySQL, MongoDB</li>
+                        <li>Outils : Git, Agile, Scrum</li>
+                    </ul>
+                    <p><a class="btn btn-primary" href="page/projects.html" role="button">Voir mes projets »</a></p>
+                </div>
+                <div class="col-lg-4">
+                    <h2>Contact</h2>
+                    <p>Email : <a href="mailto:medfeki33@gmail.com">medfeki33@gmail.com</a></p>
+                    <p>GitHub : <a href="https://github.com/mohamedfeki414" target="_blank">github.com/mohamedfeki414</a></p>
+                    <p><a class="btn btn-primary" href="page/contact.html" role="button">Me contacter »</a></p>
+                </div>
+            </div>
         </div>
-        <div class="project">
-            <h3>Jeux interactifs</h3>
-            <p>Création d'une page web regroupant plusieurs jeux interactifs en JavaScript.</p>
-        </div>
-    </section>
-
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email : <a href="mailto:medfeki33@gmail.com">medfeki33@gmail.com</a></p>
-        <p>GitHub : <a href="https://github.com/mohamedfeki414" target="_blank">github.com/mohamedfeki414</a></p>
-    </section>
-
-    <footer>
-        <p>© 2024 Mohamed Feki. Tous droits réservés.</p>
-    </footer>
-    </div>
-      
-
-</div>
-<script src="script.js"></script>     
-</body>
+        
+        <!-- Footer -->
+        <footer class="bg-dark text-center text-white py-3">
+            <p>© 2024 Mohamed Feki. Tous droits réservés.</p>
+        </footer>
+        
+        <!-- Optional JavaScript -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    </body>
 </html>
