@@ -37,13 +37,13 @@ const Experience = () => {
     },
    
     {
-      id: 5,
+      id: 6,
       src: SpringBoot,
       title: "Spring Boot",
       style: "shadow-sky-400",
     },
     {
-      id: 6,
+      id: 5,
       src: reactImage,
       title: "React",
       style: "shadow-blue-600",
